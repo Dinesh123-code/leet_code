@@ -1,0 +1,7 @@
+# Last updated: 7/14/2026, 9:56:17 AM
+class Solution:
+    def firstUniqChar(self, s: str) -> int:
+        for ch in s:
+            if s.count(ch)==1:
+                return s.index(ch)
+        return -1
